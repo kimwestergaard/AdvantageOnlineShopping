@@ -20,6 +20,11 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
+- task: RunFromFileSystemTask@6
+  inputs:
+    testPathInput: 'C:\Users\westerga\Documents\Unified Functional Testing\GUITest9'
+    uploadArtifact: 'no'
+
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
