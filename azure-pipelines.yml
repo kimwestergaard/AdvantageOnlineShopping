@@ -7,7 +7,13 @@ trigger:
 - master
 
 pool:
-  Default
+  default
+
+ task: octane-start-task@2
+  inputs:
+    OctaneServiceConnection: 'AzureDevOpsUFTCI'
+    WorkspaceList: '30001'
+    CreatePipelineCheckbox: true
 
 steps:
 - script: echo Hello, world!
@@ -17,3 +23,8 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+
+- task: octane-end-task@2
+  inputs:
+    OctaneServiceConnection: 'AzureDevOpsUFTCI'
+    WorkspaceList: '30001'
