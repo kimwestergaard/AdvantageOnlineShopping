@@ -16,7 +16,15 @@ steps:
   inputs:
     testPathInput: 'C:\Users\demo\Documents\UFT One\SAPWEB_QUICK_UFT'
     uploadArtifact: 'yes'
-
+- task: RunFromALMTask@5
+  inputs:
+    varAlmserv: 'https://almfrk-demo.saas.microfocus.com/qcbin'
+    varUserName: 'apikey-iafcgnlehpcrphnapbnj'
+    varPass: 'demdmgkcakpikbdo'
+    varDomain: 'Default'
+    varProject: 'Demo_KIM_Westergaard'
+    varTestsets: '307'
+    varReportName: 'ADO_UFT_RUN'
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
