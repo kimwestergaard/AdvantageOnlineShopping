@@ -23,7 +23,7 @@ steps:
     varPass: 'demdmgkcakpikbdo'
     varDomain: 'Default'
     varProject: 'Demo_KIM_Westergaard'
-    varTestsets: '307'
+    varTestsets: 'Root\SAP UFT\SimpleFlow - SAP Web'
     varReportName: 'ADO_UFT_RUN'
 - script: |
     echo Add other tasks to build, test, and deploy your project.
