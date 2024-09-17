@@ -34,5 +34,5 @@ steps:
   inputs:
     testResultsFormat: 'JUnit'
     testResultsFiles: '**/TEST-*.xml'
-    searchFolder: 'C:\UFT_ADO\UFT\UFTWorking\res'
+    searchFolder: 'C:\users\demo\UFT_ADO\UFT\UFTWorking\res'
     testRunTitle: 'UFT RUN Results AOS'
