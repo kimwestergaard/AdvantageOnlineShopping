@@ -11,6 +11,12 @@ pool:
 
 steps:
 
+- task: DownloadGitHubRelease@0
+  inputs:
+    connection: 'github.com_kimwestergaard'
+    userRepository: 'kimwestergaard/UFT2022Public'
+    defaultVersionType: 'latest'
+    downloadPath: '$(System.ArtifactsDirectory)'
 
 - task: RunFromFileSystemTask@6
   inputs:
@@ -36,3 +42,4 @@ steps:
     testResultsFiles: '**/TEST-*.xml'
     searchFolder: 'C:\users\demo\UFT_ADO\UFT\UFTWorking\res'
     testRunTitle: 'UFT RUN Results AOS'
+    buildConfiguration: 
