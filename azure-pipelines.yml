@@ -20,7 +20,7 @@ steps:
 
 - task: RunFromFileSystemTask@6
   inputs:
-    testPathInput: 'C:\Users\demo\Documents\UFT One\SAPWEB_QUICK_UFT'
+    testPathInput: 'C:\Users\demo\Documents\vsts-agent-win-x64-3.243.1\_work\1\s\SAPWEB_QUICK_UFT'
     uploadArtifact: 'no'
 - task: RunFromALMTask@5
   inputs:
