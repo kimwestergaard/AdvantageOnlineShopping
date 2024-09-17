@@ -30,3 +30,9 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: '**/TEST-*.xml'
+    searchFolder: 'C:\UFT_ADO\UFT\UFTWorking\res'
+    testRunTitle: 'UFT RUN Results AOS'
